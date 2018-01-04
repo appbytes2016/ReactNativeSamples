@@ -30,14 +30,14 @@ export default class DatePick extends React.Component{
 
 		return(
 			<View style={styles.preview}>
-			<Text>Pick a Date from Date Picker</Text>
-			<Text style={styles.text}>{this.state.date}</Text>
-			<DatePicker
-			date={this.state.date}
-			mode='date'
-			placeholder='select date'
-			onDateChange={(date)=>{this.setState({date:date})}}
-			/>
+				<Text>Pick a Date from Date Picker</Text>
+				<Text style={styles.text}>{this.state.date}</Text>
+				<DatePicker
+					date={this.state.date}
+					mode='date'
+					placeholder='select date'
+					onDateChange={(date)=>{this.setState({date:date})}}
+				/>
 			</View>
 			);
 	}

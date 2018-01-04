@@ -5,6 +5,7 @@ import {
 	Text,
 	Dimensions,
 	Button,
+	ScrollView,
 	Image
 
 } from 'react-native';
@@ -55,7 +56,7 @@ export default class Photo extends React.Component{
 
 
 		return(
-			<View>
+			<ScrollView>
 				<Camera
 					ref={(cam) => {this.camera = cam;}}
 					type={this.state.cameraType}
@@ -68,7 +69,7 @@ export default class Photo extends React.Component{
 				<View style={{height:10}} />
 				<Image style={styles.preview}
 					source={{uri: this.state.url}} />
-			</View>
+			</ScrollView>
 		);
 	}
 }
