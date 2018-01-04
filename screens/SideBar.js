@@ -18,7 +18,7 @@ export default class SideBar extends React.Component{
               drawerWidth={300}
               drawerPosition={DrawerLayoutAndroid.positions.Left}
               renderNavigationView={() => navigationView}>
-                <Text>Hello</Text>
+                <Text>Swipe from left to open drawer</Text>
       </DrawerLayoutAndroid>
       );//return
     }//render
